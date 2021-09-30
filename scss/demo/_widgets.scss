@@ -1,0 +1,136 @@
+
+/* ----------------------------------------------------------------
+
+	widgets.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Widgets
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for widgets. Thanks!
+-----------------------------------------------------------------*/
+
+
+.widget {
+
+	.widget-social {
+		span {
+			background-color: $primary;
+			display: inline-block;
+			padding: 0.1rem 0;
+			width: 2rem;
+			text-align: center;
+			margin-bottom: 0.2rem;
+			color: $body-color !important;
+			margin-left: 0.125rem;
+			@include transition(all 0.3s ease-in-out);
+		}
+		
+		&:hover {	
+			span {
+				background-color: $heading-color;
+			}		
+		}
+	}
+
+	&.widget-contact {
+		margin-top: -0.6rem;
+
+		.widget-title {
+			text-align: center;
+
+			h2 {
+				font-family: $heading-font;
+				color: white;
+				line-height: 1;
+				margin-bottom: 0.5rem;
+				font-size: 2.67rem;
+				font-weight: 400;
+			}
+		}
+
+		.widget-content {
+
+			&.widget-left {
+				text-align: center;
+				margin-bottom: 2rem;
+
+				@include media-breakpoint-up(sm) {
+					text-align: center;
+					margin-bottom: 0;
+				}
+
+				@include media-breakpoint-up(lg) {
+					text-align: left;
+					margin-bottom: 0;
+				}
+			}
+
+			&.widget-right {
+				text-align: center;
+				margin-top: 2rem;
+
+				@include media-breakpoint-up(sm) {
+					text-align: center;
+					margin-top: 0;
+				}
+
+				@include media-breakpoint-up(lg) {
+					text-align: right;
+					margin-top: 0;
+				}
+			}
+
+			a {
+				h3 {
+					@include transition(all 0.3s ease-in-out);
+				}
+				p {
+					@include transition(all 0.3s ease-in-out);
+				}
+
+				&:hover {
+					h3 {
+						color: $body-color !important;
+					}
+
+					p {
+						color: white !important;
+					}
+				}
+			}
+		}
+	}
+
+	// Widget - Payments
+	&.widget-payment {
+		.payments {
+			display: flex;
+			justify-content: center;
+	
+			@include media-breakpoint-up(md) {
+				justify-content: flex-end;
+			}
+
+			.payment-icon {
+				text-align: center;
+				margin-left: 0.4rem;
+				width: 4rem;
+				padding: 0.125rem 0;
+				background-color: $primary;
+				
+				img {
+					width: 3rem;
+				}
+			}
+		}
+	}
+}
+
+/* Widget - Products
+-----------------------------------------------------------------*/
