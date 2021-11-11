@@ -16,77 +16,12 @@
 -----------------------------------------------------------------*/
 
 
-/* Category
------------------------------------------------------------------*/
-.news {
-	margin-bottom: 1.875rem;
-	position: relative;
-
-	&:hover {
-		.news-image {
-			position: relative;
-			&::after {
-				opacity: 50%;
-			}
-		}
-	}
-
-	.news-image {
-		position: relative;
-
-		&::after {
-			@include transition(all 0.3s ease-in-out);
-			
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-color: black;
-			opacity: 20%;
-		}
-	}
-
-	.news-info {
-		position: absolute;
-		left: 0;
-		bottom: 3.5rem;
-		margin-left: 2.2rem;
-		margin-right: 4rem;
-
-		.news-detail {
-			font-family: $heading-font;
-			font-size: $h3-font-size;
-			line-height: 1.5;
-			color: white;
-			font-weight: 400;
-		}
-
-		.news-more {
-			font-family: $body-font;
-			font-size: 1rem;
-			line-height: 1;
-			color: white;
-			font-weight: 300;
-			margin-bottom: 0;
-			@include transition(all 0.3s ease-in-out);
-
-			&:hover {
-				color: $body-color;
-			}
-		}
-	}
-}
-
-
 /* Product
 -----------------------------------------------------------------*/
 .product {
 	margin-bottom: 3.28125rem;
 	position: relative;
-	font-family: $body-font;
-	line-height: 1 !important;
+	line-height: 1;
 
 	.product-image {
 		position: relative;
@@ -149,16 +84,11 @@
 
 	.product-title {
 		color: black;
-		font-family: $heading-font;
 		font-size: 1.5rem;
 		font-weight: 400;
 		line-height: 1.25;
 		margin-bottom: 1rem;
 		display: inline-block;
-		
-		&.product-white {
-			color: white;
-		}
 	}
 
 	.product-price {
@@ -176,8 +106,6 @@
 
 	.product-categories {
 		a {
-			color: $body-color;
-			font-family: $body-font;
 			font-size: 1rem;
 			font-weight: 300;
 			line-height: 1;
@@ -185,8 +113,6 @@
 	}
 
 	.product-deadline {
-		color: $body-color;
-		font-family: $body-font;
 		font-size: 1rem;
 		font-weight: 300;
 		line-height: 1;
@@ -194,7 +120,6 @@
 
 	.onhot {
 		color: $theme-color;		
-		font-family: $body-font;
 		font-size: $h6-font-size;
 		font-weight: 700;
 		text-transform: uppercase;
@@ -205,7 +130,6 @@
 		border-radius: 0.5rem;
 		color: $white;
 		display: inline-block;
-		font-family: $body-font;
 		font-size: $h6-font-size;
 		font-weight: 600;
 		line-height: 1;
@@ -215,18 +139,34 @@
 }
 
 .ads {
-	position: relative;
-	display: block;
+    position: relative;
+    display: block;
+	margin-bottom: 1.5rem;
 
-	img {
-		width: 100%;
-	}
+    .ads-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
 
-	.ads-content {
-		position: absolute;
-		top: 4rem;
-		left: 3.5rem;
-		padding-right: 3rem;
+        .ads-bg-img {
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .ads-body {
+        position: relative;
+        z-index: 1;
+		padding: 4rem 3rem 9.5rem;
 
 		h2 {
 			font-size: 4rem;
@@ -235,5 +175,5 @@
 			color: $heading-color;
 			margin-bottom: 1.5rem;
 		}
-	}
+    }
 }

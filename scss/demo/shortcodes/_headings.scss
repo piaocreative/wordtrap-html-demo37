@@ -18,17 +18,11 @@
 
 	.title {		
 		display: block;
-		font-family: $heading-font;
 		font-size: 4.65rem;
 		font-weight: 400;
 		line-height: 1;
 		margin-bottom: 0;
 		color: black;
-		text-align: center;
-
-		@include media-breakpoint-up(lg) {
-			text-align: left;
-		}
 	}
 
 	.sub-title {		
@@ -38,14 +32,5 @@
 		font-weight: 700;
 		line-height: 1;
 		margin-bottom: 1.5rem;
-	}
-
-	.content {
-		font-family: $body-font;
-		line-height: 1.75;
-		font-size: 1.125rem;
-		color: heading-color;
-		font-weight: 300;
-		margin-top: 3.25rem;
 	}
 }

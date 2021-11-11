@@ -93,3 +93,39 @@
 	font-weight: 600;
 	line-height: $line-height-lg;
 }
+
+.post {
+	margin-bottom: 1.875rem;
+	position: relative;
+	
+	.post-thumbnail {
+		position: relative;
+	}
+
+	.post-content {
+		position: absolute;
+		left: 0;
+		bottom: 3.5rem;
+		margin-left: 2.2rem;
+		margin-right: 4rem;
+
+		.entry-title {
+			line-height: 1.5;
+			color: white;
+			font-weight: 400;
+		}
+
+		.entry-link {
+			font-size: 1rem;
+			line-height: 1;
+			color: white;
+			font-weight: 300;
+			margin-bottom: 0;
+			@include transition(all 0.3s ease-in-out);
+
+			&:hover {
+				color: $body-color;
+			}
+		}
+	}
+}

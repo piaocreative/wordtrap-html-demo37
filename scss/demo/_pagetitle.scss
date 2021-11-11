@@ -28,6 +28,26 @@
 		margin-bottom: 5.15625rem;
 		text-align: center;
 
+		&.contact {
+			font-size: 3rem;
+			font-weight: 400;
+			color: $secondary;
+			line-height: 1.25;
+			text-align: center;
+			margin-bottom: 2rem;
+			margin-top: 3rem;
+
+			@include media-breakpoint-up(lg) {
+				text-align: left;
+				margin-top: 0;
+			}
+			
+			@include media-breakpoint-up(xxl) {
+				font-size: 4.5rem;
+				margin-top: 0;
+			}
+		}
+
 		@include media-breakpoint-up(lg) {
 			text-align: left;
 		}

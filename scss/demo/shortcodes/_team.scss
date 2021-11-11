@@ -17,7 +17,6 @@
 		padding-left: 0;
 		margin-bottom: 3.25rem;
 		background-color: transparent;
-		font-family: $body-font;
 		transition: all 0.3s ease-in-out;
 		text-align: center;
 
@@ -37,11 +36,9 @@
 
 		.team-detail {
 			font-size: 1rem;
-			color: $body-color;
 			line-height: 1;
 			margin-bottom: 0;
 			font-weight: 300;
-			font-family: $body-font;
 		}
 	}
 

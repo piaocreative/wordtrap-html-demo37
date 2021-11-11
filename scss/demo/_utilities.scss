@@ -18,10 +18,7 @@
 // Text Color
 .text-black { color: #000 !important; }
 .text-secondary { color: $body-color !important; }
-.dark-theme { background-color: $primary !important; }
 
-// Font Size
-.fs-extra { font-size: 1.125rem;}
 
 //-------------------- Image --------------------//
 
@@ -38,20 +35,4 @@ img {
 	position: relative;
 	padding-top: $section-spacer;
 	padding-bottom: $section-spacer;
-}
-
-.section-padding-top {
-	padding-top: $section-spacer;
-}
-
-.section-padding-bottom {
-	padding-bottom: $section-spacer;
-}
-
-.section-margin-top {
-	margin-top: $section-spacer;
-}
-
-.section-margin-bottom {
-	margin-bottom: $section-spacer;
 }

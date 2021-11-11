@@ -44,7 +44,7 @@ dl, dt, dd, ol, ul, li {
 body {
 	line-height: $line-height-base;
 	color: $body-color;
-	font-size: $font-size-base;
+	font-size: 1rem;
 	font-family: $body-font;
 }
 
@@ -61,7 +61,7 @@ h3,
 h4,
 h5,
 h6 {
-	color: white;
+	color: $heading-color;
 	line-height: 1;
 	margin: 0 0 1.875rem 0;
 	font-family: $body-font;
